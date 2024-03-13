@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teh Rina Catering</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative lg:py-1 py-3 px-4">
+          <div class="px-4 flex">
+            <!-- <a href="#home" class="font-bold text-lg text-primary block py-6">Rizzcookies.</a> -->
+            <img src="./dist/img/logo.png" width="126px" height="29px" class="mt-1" alt="" />
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="scale-75 lg:hidden block absolute right-4">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-3 bg-white shadow-lg rounded-lg max-w-[250px] w-full lg:right-1/2 lg:top-1/2 right-4 top-20 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex justify-center">
+                <li class="group lg:text-center">
+                  <a href="#home" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Beranda</a>
+                </li>
+                <li class="group lg:text-center">
+                  <a href="#about" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Tentang Kami</a>
+                </li>
+                <li class="group lg:text-center">
+                  <a href="#visi" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Visi</a>
+                </li>
+                <li class="group lg:text-center">
+                  <a href="#produk" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Produk</a>
+                </li>
+                <li class="group lg:text-center lg:hidden mt-3">
+                  <div class="justify-center px-4">
+                    <a
+                      href="https://wa.me/6283138825787"
+                      class="inline-block bg-primary px-7 py-3 text-sm font-medium text-white hover:border-primary hover:border hover:bg-transparent focus:outline-none transition-all ease-in-out duration-300 hover:text-primary"
+                    >
+                      Whatsapp
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="justify-center px-4 hidden lg:block">
+            <a href="https://wa.me/6283138825787" class="inline-block bg-primary px-7 py-3 text-sm font-medium text-white hover:border-primary hover:border hover:bg-transparent focus:outline-none transition-all ease-in-out duration-300">
+              Whatsapp
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="relative bg-[url(https://images.unsplash.com/photo-1555244162-803834f70033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0ZXJpbmclMjBmb29kfGVufDB8fDB8fHww)] bg-cover bg-center bg-no-repeat">
+      <div class="absolute inset-0 bg-black/75 sm:from-black/95 sm:to-black/25"></div>
+      <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen items-center justify-center lg:px-8">
+        <div class="max-w-2xl text-center text-white">
+          <h1 class="text-3xl sm:text-7xl font-heading sm:leading-snug">Catering Terbaik Di Indonesia.</h1>
+
+          <p class="mt-4 max-w-lg sm:text-xl/relaxed text-white/60 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="pb-12 pt-16 overflow-x-hidden">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full self-start px-4 lg:px-12 lg:w-1/2 lg:pb-10">
+                    <div class="w-full bg-white px-8 relative">
+                        <img src="./dist/img/makanan-catering.png" alt="">
+                    </div>
+                </div>
+                <div class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
+                    <h1 class="text-center text-3xl font-bold sm:text-5xl sm:text-start text-black font-heading">
+                        Bahan Baku <span class="text-primary">Berkualitas</span> Dan <span class="text-primary">Bermutu
+                            Tinggi</span>
+                    </h1>
+                    <p class=" lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg lg:text-start text-gray-500">
+                        Pancong Pocong menggunakan bahan baku yang berkualitas serta bermutu tinggi, sehingga
+                        menghasilkan cita rasa terbaik dibandingkan dengan kompetitor produk pancong lainnya.
+                        <br> <br>
+                        Kualitas bahan baku yang disediakan menjadikan Pancong Pocong begitu disukai berbagai
+                        lapisan customer mulai dari anak-anak hingga dewasa
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+    </section>
+    <section class="relative bg-[url(https://images.unsplash.com/photo-1555244162-803834f70033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0ZXJpbmclMjBmb29kfGVufDB8fDB8fHww)] bg-cover bg-center bg-no-repeat">
+      <div class="absolute inset-0 bg-black/75 sm:from-black/95 sm:to-black/25"></div>
+      <div class="relative mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold text-white sm:text-4xl font-heading">Trusted by eCommerce Businesses</h2>
+    
+          <p class="mt-4 text-gray-400 sm:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores laborum labore.
+          </p>
+        </div>
+    
+        <div class="mt-8 sm:mt-12">
+          <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div class="flex flex-col px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500">Total Sales</dt>
+    
+              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading">$4.8m</dd>
+            </div>
+    
+            <div class="flex flex-col px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500">Official Addons</dt>
+    
+              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading">24</dd>
+            </div>
+    
+            <div class="flex flex-col px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500">Total Addons</dt>
+    
+              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading">86</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="pb-12 pt-16 overflow-x-hidden">
+      <div class="container mx-auto">
+          <div class="flex flex-wrap">
+              <div class="w-full self-start px-4 lg:px-12 lg:w-1/2 lg:pb-10 lg:order-last">
+                  <div class="w-full bg-white px-8 relative">
+                      <img src="./dist/img/makanan-catering.png" alt="">
+                  </div>
+              </div>
+              <div class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
+                  <h1 class="text-center text-3xl font-bold sm:text-5xl sm:text-start text-black font-heading">
+                      Bahan Baku <span class="text-primary">Berkualitas</span> Dan <span class="text-primary">Bermutu
+                          Tinggi</span>
+                  </h1>
+                  <p class=" lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg lg:text-start text-gray-500">
+                      Pancong Pocong menggunakan bahan baku yang berkualitas serta bermutu tinggi, sehingga
+                      menghasilkan cita rasa terbaik dibandingkan dengan kompetitor produk pancong lainnya.
+                      <br> <br>
+                      Kualitas bahan baku yang disediakan menjadikan Pancong Pocong begitu disukai berbagai
+                      lapisan customer mulai dari anak-anak hingga dewasa
+                      <br><br>
+                  </p>
+              </div>
+          </div>
+  </section>
+  <section class="pb-24">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:px-12">
+          <h1 class="text-center text-3xl lg:text-5xl font-bold  text-black font-heading">
+            Daftar Menu Kami
+          </h1>
+          <p class="lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg text-gray-500">
+            Pancong Pocong menggunakan bahan baku yang berkualitas serta bermutu tinggi, sehingga menghasilkan cita rasa terbaik dibandingkan dengan kompetitor produk pancong lainnya.
+          </p>
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-7">
+            <div class="rounded-lg bg-gray-200">
+              <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
+                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
+                  <div class="absolute inset-0 flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-gray-200">
+              <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
+                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
+                  <div class="absolute inset-0 flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-gray-200">
+              <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
+                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
+                  <div class="absolute inset-0 flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-gray-200">
+              <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
+                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
+                  <div class="absolute inset-0 flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="galeri" class="pt-12 pb-12">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap">
+            <div class="self-center w-full mb-7 px-4">
+                <h1 class="text-center text-3xl lg:text-5xl font-bold font-heading"><span class="text-primary">Galeri</span></h1>
+            </div>
+            <div id="keen-slider-2" class="keen-slider lg:px-12 mt-7">
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                </div>
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                </div>
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                </div>
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                </div>
+            </div>
+            <div class="mt-8 flex gap-4 justify-center mx-auto">
+                <button aria-label="Previous slide" id="keen-slider-previous-2"
+                    class="rounded-full border border-primary p-3 text-primary transition hover:bg-primary hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <button aria-label="Next slide" id="keen-slider-next-2"
+                    class="rounded-full border border-primary p-3 text-primary transition hover:bg-primary hover:text-white">
+                    <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="pb-12">
+  <h4 class="text-center text-primary mt-5 font-bold text-4xl mb-5 lg:mb-5 font-heading">Find <span class="text-black">Us!</span> </h4>
+  <div class="container mx-auto">
+    <div class="flex-wrap flex justify-center">
+      <div class=" border-2 p-2 rounded-md border-primary text-primary mx-auto justify-center">
+        <iframe class="rounded-md items-center flex lg:w-[900px] lg:h-[400px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.5426261111868!2d112.77385206738259!3d-7.344323411131166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e57f41c6bcb7%3A0xebeef08b92ab49d1!2sTEH%20RINA%20CATERING!5e0!3m2!1sid!2sid!4v1710339452938!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="w-full lg:w-1/2 lg:ml-16 lg:self-center">
+        <div class="list w-full mx-auto mt-5 justify-self-center">
+            <ul class="mx-auto self-center lg:flex lg:gap-36 justify-center">
+              <li class="mt-12 justify-center text-center">
+                <button class="w-auto lg:text-xl rounded-full text-center justify-center inline-flex  bg-secondary p-4 text-sm font-medium transition hover:scale-105">
+                  <a class=" py-auto" href="https://www.instagram.com/catering_teh_rina/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#FFFFFF" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                  </a>
+                </button>
+                <p class="text-secondary mt-2">INSTAGRAM</p>
+                <p class="text-primary mt-2">@catering_teh_rina</p>
+              </li>
+              <li class="mt-12 justify-center text-center">
+                <button class="w-auto lg:text-xl rounded-full text-center justify-center inline-flex  bg-secondary p-4 text-sm font-medium transition hover:scale-105">
+                  <a class=" py-auto" href="https://wa.me/+6287752558999">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#FFFFF0"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></i></a>
+                </button>
+                <p class="text-secondary mt-2">WHATSAPP</p>
+                <p class="text-primary mt-2">+62 877-5255-8999</p>
+              </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-gray-100">
+  <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div class="flex justify-center text-primary sm:justify-start">
+          <img src="./dist/img/logo_hitam.png" class="w-44" alt="">
+        </div>
+
+        <p class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
+          cum itaque neque.
+        </p>
+
+        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-primary transition hover:text-primary/75"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-primary transition hover:text-primary/75"
+            >
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-primary transition hover:text-primary/75"
+            >
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-gray-900">Links</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+                Employee Handbook
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-gray-900">Contact Us</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a
+                class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-5 shrink-0 text-gray-900"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+
+                <span class="flex-1 text-gray-700">john@doe.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-5 shrink-0 text-gray-900"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+
+                <span class="flex-1 text-gray-700">0123456789</span>
+              </a>
+            </li>
+
+            <li
+              class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-5 shrink-0 text-gray-900"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+
+              <address class="-mt-0.5 flex-1 not-italic text-gray-700">
+                213 Lane, London, United Kingdom
+              </address>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-6">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        <p class="text-sm text-gray-500">
+          <span class="block sm:inline">All rights reserved.</span>
+
+          <a
+            class="inline-block text-primary underline transition hover:text-primary/75"
+            href="#"
+          >
+            Terms & Conditions
+          </a>
+
+          <span>&middot;</span>
+
+          <a
+            class="inline-block text-primary underline transition hover:text-primary/75"
+            href="#"
+          >
+            Privacy Policy
+          </a>
+        </p>
+
+        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2022 Company Name</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+    <script src="./dist/js/script.js"></script>
+    <script type="module">
+              import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+      const keenSlider2 = new KeenSlider(
+            '#keen-slider-2',
+            {
+                loop: true,
+                slides: {
+                    origin: 'center',
+                    perView: 1, // Sesuaikan dengan jumlah slide yang Anda inginkan
+                    spacing: 16, // Sesuaikan dengan spasi antara slide
+                },
+                breakpoints: {
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'auto',
+                            perView: 3, // Sesuaikan dengan jumlah slide yang Anda inginkan
+                            spacing: 32, // Sesuaikan dengan spasi antara slide
+                        },
+                    },
+                },
+            },
+            []
+        )
+
+        const keenSliderPrevious2 = document.getElementById('keen-slider-previous-2')
+        const keenSliderNext2 = document.getElementById('keen-slider-next-2')
+
+        keenSliderPrevious2.addEventListener('click', () => keenSlider2.prev())
+        keenSliderNext2.addEventListener('click', () => keenSlider2.next())
+    </script>
+  </body>
+</html>
