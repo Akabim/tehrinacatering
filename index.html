@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
@@ -33,10 +35,13 @@
                   <a href="#about" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Tentang Kami</a>
                 </li>
                 <li class="group lg:text-center">
-                  <a href="#visi" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Visi</a>
+                  <a href="#menu" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Menu</a>
                 </li>
                 <li class="group lg:text-center">
-                  <a href="#produk" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Produk</a>
+                  <a href="#galeri" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Galeri</a>
+                </li>
+                <li class="group lg:text-center">
+                  <a href="#contact" class="text-black lg:text-white py-2 px-8 underline-offset-8 group-hover:font-semibold flex transition ease-in-out duration-300">Contact</a>
                 </li>
                 <li class="group lg:text-center lg:hidden mt-3">
                   <div class="justify-center px-4">
@@ -59,36 +64,34 @@
         </div>
       </div>
     </header>
-    <section class="relative bg-[url(https://images.unsplash.com/photo-1555244162-803834f70033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0ZXJpbmclMjBmb29kfGVufDB8fDB8fHww)] bg-cover bg-center bg-no-repeat">
+    <section id="home" class="relative bg-[url(https://images.unsplash.com/photo-1555244162-803834f70033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0ZXJpbmclMjBmb29kfGVufDB8fDB8fHww)] bg-cover bg-center bg-no-repeat">
       <div class="absolute inset-0 bg-black/75 sm:from-black/95 sm:to-black/25"></div>
       <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen items-center justify-center lg:px-8">
         <div class="max-w-2xl text-center text-white">
-          <h1 class="text-3xl sm:text-7xl font-heading sm:leading-snug">Catering Terbaik Di Indonesia.</h1>
+          <h1 data-aos="fade-up" class="text-3xl sm:text-7xl font-heading sm:leading-snug">Catering Terbaik Di Indonesia.</h1>
 
-          <p class="mt-4 max-w-lg sm:text-xl/relaxed text-white/60 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!</p>
+          <p data-aos="fade-up" data-aos-delay="300"
+          class="mt-4 max-w-lg sm:text-xl/relaxed text-white/60 mx-auto">Nikmati layanan catering berkualitas dengan harga terjangkau di Sidoarjo.</p>
         </div>
       </div>
     </section>
-    <section id="about" class="pb-12 pt-16 overflow-x-hidden">
+    <section id="about" class="pb-12 pt-16 overflow-y-hidden">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
                 <div class="w-full self-start px-4 lg:px-12 lg:w-1/2 lg:pb-10">
-                    <div class="w-full bg-white px-8 relative">
+                    <div data-aos="fade-up" class="w-full bg-white px-8 relative">
                         <img src="./dist/img/makanan-catering.png" alt="">
                     </div>
                 </div>
-                <div class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
+                <div data-aos="fade-up" data-aos-delay="300"  class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
                     <h1 class="text-center text-3xl font-bold sm:text-5xl sm:text-start text-black font-heading">
-                        Bahan Baku <span class="text-primary">Berkualitas</span> Dan <span class="text-primary">Bermutu
-                            Tinggi</span>
+                        Tentang <span class="text-primary">Teh Rina</span> <span class="text-primary">Catering
+                            </span>
                     </h1>
                     <p class=" lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg lg:text-start text-gray-500">
-                        Pancong Pocong menggunakan bahan baku yang berkualitas serta bermutu tinggi, sehingga
-                        menghasilkan cita rasa terbaik dibandingkan dengan kompetitor produk pancong lainnya.
-                        <br> <br>
-                        Kualitas bahan baku yang disediakan menjadikan Pancong Pocong begitu disukai berbagai
-                        lapisan customer mulai dari anak-anak hingga dewasa
+                        Kami adalah tim yang berdedikasi untuk menciptakan pengalaman kuliner yang tak terlupakan. Dari makanan hingga pelayanan, kami hadir untuk membuat setiap momen berharga. 
                         <br><br>
+                        Nikmati hidangan lezat kami yang disiapkan dengan bahan-bahan segar dan berkualitas tinggi. Kami selalu berusaha memberikan pengalaman kuliner terbaik bagi pelanggan kami.
                     </p>
                 </div>
             </div>
@@ -97,72 +100,68 @@
       <div class="absolute inset-0 bg-black/75 sm:from-black/95 sm:to-black/25"></div>
       <div class="relative mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold text-white sm:text-4xl font-heading">Trusted by eCommerce Businesses</h2>
+          <h2 data-aos="fade-up" class="text-3xl font-bold text-white sm:text-4xl font-heading">Dipercaya Berbagai Kalangan.</h2>
     
-          <p class="mt-4 text-gray-400 sm:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores laborum labore.
+          <p data-aos="fade-up" data-aos-delay="300" class="mt-4 text-gray-400 sm:text-xl">
+            Kami telah melayani lebih dari 300 pelanggan dengan kepuasan yang tinggi. Sebagai penyedia catering terkemuka di Sidoarjo, kami berusaha memberikan solusi catering yang terpercaya bagi anda.
           </p>
         </div>
     
-        <div class="mt-8 sm:mt-12">
+        <div class="mt-8 sm:mt-12" id="counter">
           <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div class="flex flex-col px-4 py-8 text-center">
-              <dt class="order-last text-lg font-medium text-gray-500">Total Sales</dt>
+              <dt class="order-last text-lg font-medium text-gray-500">Acara</dt>
     
-              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading">$4.8m</dd>
+              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading" data-count="300">0</dd>
             </div>
     
             <div class="flex flex-col px-4 py-8 text-center">
-              <dt class="order-last text-lg font-medium text-gray-500">Official Addons</dt>
+              <dt class="order-last text-lg font-medium text-gray-500">Menu Yang Lezat</dt>
     
-              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading">24</dd>
+              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading" data-count="24">0</dd>
             </div>
     
             <div class="flex flex-col px-4 py-8 text-center">
-              <dt class="order-last text-lg font-medium text-gray-500">Total Addons</dt>
+              <dt class="order-last text-lg font-medium text-gray-500" >Karyawan</dt>
     
-              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading">86</dd>
+              <dd class="text-4xl font-extrabold text-white md:text-5xl font-heading" data-count="100">0</dd>
             </div>
           </dl>
         </div>
       </div>
     </section>
-    <section id="about" class="pb-12 pt-16 overflow-x-hidden">
+    <section class="pb-12 pt-16 overflow-y-hidden">
       <div class="container mx-auto">
           <div class="flex flex-wrap">
               <div class="w-full self-start px-4 lg:px-12 lg:w-1/2 lg:pb-10 lg:order-last">
-                  <div class="w-full bg-white px-8 relative">
+                  <div data-aos="fade-up" class="w-full bg-white px-8 relative">
                       <img src="./dist/img/makanan-catering.png" alt="">
                   </div>
               </div>
-              <div class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
+              <div data-aos="fade-up" data-aos-delay="300" class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
                   <h1 class="text-center text-3xl font-bold sm:text-5xl sm:text-start text-black font-heading">
-                      Bahan Baku <span class="text-primary">Berkualitas</span> Dan <span class="text-primary">Bermutu
-                          Tinggi</span>
+                    <span class="text-primary">Mengapa</span> Memilih Teh Rina Catering?
                   </h1>
                   <p class=" lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg lg:text-start text-gray-500">
-                      Pancong Pocong menggunakan bahan baku yang berkualitas serta bermutu tinggi, sehingga
-                      menghasilkan cita rasa terbaik dibandingkan dengan kompetitor produk pancong lainnya.
-                      <br> <br>
-                      Kualitas bahan baku yang disediakan menjadikan Pancong Pocong begitu disukai berbagai
-                      lapisan customer mulai dari anak-anak hingga dewasa
-                      <br><br>
+                    Kami berkomitmen untuk menyajikan hidangan berkualitas dengan harga terjangkau. Dengan pengalaman kami dalam industri catering.
+                    <br><br>
+                    Kami menjamin kepuasan pelanggan dalam setiap acara. Percayakan kebutuhan catering Anda kepada Teh Rina Catering dan nikmati pengalaman kuliner yang tak terlupakan.
                   </p>
               </div>
           </div>
   </section>
-  <section class="pb-24">
+  <section id="menu" class="py-24">
     <div class="container mx-auto">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:px-12">
-          <h1 class="text-center text-3xl lg:text-5xl font-bold  text-black font-heading">
+          <h1 data-aos="fade-up" class="text-center text-3xl lg:text-5xl font-bold  text-black font-heading">
             Daftar Menu Kami
           </h1>
-          <p class="lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg text-gray-500">
-            Pancong Pocong menggunakan bahan baku yang berkualitas serta bermutu tinggi, sehingga menghasilkan cita rasa terbaik dibandingkan dengan kompetitor produk pancong lainnya.
+          <p data-aos="fade-up" data-aos-delay="300" class="lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg text-gray-500">
+            Nikmati ragam menu lezat kami untuk berbagai jenis acara. Dari nasi kotak hingga hidangan buffet, kami menyediakan pilihan menu yang sesuai dengan selera Anda.
           </p>
           <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-7">
-            <div class="rounded-lg bg-gray-200">
+            <div data-aos="fade-up" data-aos-delay="400" class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
                 <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
@@ -173,7 +172,7 @@
                 </div>
               </div>
             </div>
-            <div class="rounded-lg bg-gray-200">
+            <div data-aos="fade-up" class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
                 <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
@@ -184,7 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="rounded-lg bg-gray-200">
+            <div data-aos="fade-up" class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
                 <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
@@ -195,7 +194,7 @@
                 </div>
               </div>
             </div>
-            <div class="rounded-lg bg-gray-200">
+            <div data-aos="fade-up"  class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
                 <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
@@ -251,13 +250,13 @@
     </div>
 </section>
 <section id="contact" class="pb-12">
-  <h4 class="text-center text-primary mt-5 font-bold text-4xl mb-5 lg:mb-5 font-heading">Find <span class="text-black">Us!</span> </h4>
+  <h4 data-aos="fade-up" class="text-center text-primary mt-5 font-bold text-4xl mb-5 lg:mb-5 font-heading">Hubungi <span class="text-black">Kami</span> </h4>
   <div class="container mx-auto">
     <div class="flex-wrap flex justify-center">
-      <div class=" border-2 p-2 rounded-md border-primary text-primary mx-auto justify-center">
+      <div data-aos="fade-up" data-aos-delay="300" class=" border-2 p-2 rounded-md border-primary text-primary mx-auto justify-center">
         <iframe class="rounded-md items-center flex lg:w-[900px] lg:h-[400px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.5426261111868!2d112.77385206738259!3d-7.344323411131166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e57f41c6bcb7%3A0xebeef08b92ab49d1!2sTEH%20RINA%20CATERING!5e0!3m2!1sid!2sid!4v1710339452938!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="w-full lg:w-1/2 lg:ml-16 lg:self-center">
+      <div data-aos="fade-up" data-aos-delay="400" class="w-full lg:w-1/2 lg:ml-16 lg:self-center">
         <div class="list w-full mx-auto mt-5 justify-self-center">
             <ul class="mx-auto self-center lg:flex lg:gap-36 justify-center">
               <li class="mt-12 justify-center text-center">
@@ -294,8 +293,7 @@
         </div>
 
         <p class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-          cum itaque neque.
+         Catering Service terbaik di Sidoarjo. Kami menyediakan berbagai macam menu dengan harga terjangkau.
         </p>
 
         <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -359,25 +357,28 @@
 
           <ul class="mt-8 space-y-4 text-sm">
             <li>
-              <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#home">
                 Home
               </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#about">
                 About
               </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
-                Employee Handbook
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#menu">
+                Menu
               </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#galeri"> Galeri </a>
+            </li>
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="#contact"> Kontak </a>
             </li>
           </ul>
         </div>
@@ -387,29 +388,6 @@
           <p class="text-lg font-medium text-gray-900">Contact Us</p>
 
           <ul class="mt-8 space-y-4 text-sm">
-            <li>
-              <a
-                class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                href="#"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5 shrink-0 text-gray-900"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-
-                <span class="flex-1 text-gray-700">john@doe.com</span>
-              </a>
-            </li>
 
             <li>
               <a
@@ -431,7 +409,7 @@
                   />
                 </svg>
 
-                <span class="flex-1 text-gray-700">0123456789</span>
+                <span class="flex-1 text-gray-700">+62 877-5255-8999</span>
               </a>
             </li>
 
@@ -459,7 +437,7 @@
               </svg>
 
               <address class="-mt-0.5 flex-1 not-italic text-gray-700">
-                213 Lane, London, United Kingdom
+                Pd. Tjandra Indah, Jl. Mangga II No.E 296, Tambaksumur, Kec. Waru, Kabupaten Sidoarjo, Jawa Timur 61256
               </address>
             </li>
           </ul>
@@ -489,13 +467,13 @@
           </a>
         </p>
 
-        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2022 Company Name</p>
+        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2024 Markaz Design</p>
       </div>
     </div>
   </div>
 </footer>
-  
     <script src="./dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module">
               import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
       const keenSlider2 = new KeenSlider(
@@ -525,6 +503,9 @@
 
         keenSliderPrevious2.addEventListener('click', () => keenSlider2.prev())
         keenSliderNext2.addEventListener('click', () => keenSlider2.next())
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
