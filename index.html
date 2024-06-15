@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,7 +64,7 @@
         </div>
       </div>
     </header>
-    <section id="home" class="relative bg-[url(https://images.unsplash.com/photo-1555244162-803834f70033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0ZXJpbmclMjBmb29kfGVufDB8fDB8fHww)] bg-cover bg-center bg-no-repeat">
+    <section id="home" style="background-image: url('./dist/img/banner.jpg');" class="relative bg-cover bg-top bg-no-repeat">
       <div class="absolute inset-0 bg-black/75 sm:from-black/95 sm:to-black/25"></div>
       <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen items-center justify-center lg:px-8">
         <div class="max-w-2xl text-center text-white">
@@ -80,7 +80,7 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-start px-4 lg:px-12 lg:w-1/2 lg:pb-10">
                     <div data-aos="fade-up" class="w-full bg-white px-8 relative">
-                        <img src="./dist/img/makanan-catering.png" alt="">
+                        <img src="./dist/img/makanan-catering-1.png" alt="">
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300"  class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
@@ -135,7 +135,7 @@
           <div class="flex flex-wrap">
               <div class="w-full self-start px-4 lg:px-12 lg:w-1/2 lg:pb-10 lg:order-last">
                   <div data-aos="fade-up" class="w-full bg-white px-8 relative">
-                      <img src="./dist/img/makanan-catering.png" alt="">
+                      <img src="./dist/img/makanan-catering-2.png" alt="">
                   </div>
               </div>
               <div data-aos="fade-up" data-aos-delay="300" class="w-full self-center px-4 lg:px-12 mt-10 lg:mt-0 lg:pl-16 lg:w-1/2">
@@ -155,7 +155,7 @@
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:px-12">
           <h1 data-aos="fade-up" class="text-center text-3xl lg:text-5xl font-bold  text-black font-heading">
-            Daftar Menu Kami
+            Menu Terbaik Kami
           </h1>
           <p data-aos="fade-up" data-aos-delay="300" class="lg:pr-4 text-center mt-9 text-normal text-sm lg:text-lg text-gray-500">
             Nikmati ragam menu lezat kami untuk berbagai jenis acara. Dari nasi kotak hingga hidangan buffet, kami menyediakan pilihan menu yang sesuai dengan selera Anda.
@@ -163,48 +163,56 @@
           <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-7">
             <div data-aos="fade-up" data-aos-delay="400" class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
-                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <img class="w-full bg-contain" src="./dist/img/nasi-kotak.png" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
                   <div class="absolute inset-0 flex flex-col justify-center items-center">
-                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-2">Nasi Kotak</h3>
+                    <p class="text-gray-400">Nasi kotak dengan berbagai menu yang lezat.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div data-aos="fade-up" class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
-                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <img class="w-full" src="./dist/img/tumpeng.png" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
                   <div class="absolute inset-0 flex flex-col justify-center items-center">
-                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-2">Tumpeng</h3>
+                    <p class="text-gray-400">Nasi tumpeng yang cocok untuk hajatan atau makan besar.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div data-aos="fade-up" class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
-                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <img class="w-full" src="./dist/img/jajanan.png" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
                   <div class="absolute inset-0 flex flex-col justify-center items-center">
-                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-2">Aneka Kue</h3>
+                    <p class="text-gray-400">Aneka kue yang menarik dan lezat.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div data-aos="fade-up"  class="rounded-lg bg-gray-200">
               <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white product-card">
-                <img class="w-full" src="https://via.placeholder.com/400x500" alt="Product Image">
+                <img class="w-full" src="./dist/img/minuman.png" alt="Product Image">
                 <div class="text-overlay relative top-0 left-0 w-full h-full text-center">
                   <div class="absolute inset-0 flex flex-col justify-center items-center">
-                    <h3 class="text-xl font-semibold mb-2">Product Title</h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-2">Aneka Minuman</h3>
+                    <p class="text-gray-400">Minuman segar dengan bahan alami.</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="justify-center px-4 mx-auto flex mt-7 text-center">
+            <a
+              href="https://wa.me/6283138825787"
+              class="inline-block bg-primary px-7 py-3 text-sm font-medium text-white hover:border-primary hover:border hover:bg-transparent focus:outline-none transition-all ease-in-out duration-300 hover:text-primary text-center"
+            >
+              Whatsapp kami untuk menu lengkap
+            </a>
           </div>
         </div>
       </div>
@@ -218,16 +226,25 @@
             </div>
             <div id="keen-slider-2" class="keen-slider lg:px-12 mt-7">
                 <div class="keen-slider__slide">
-                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                    <img src="./dist/img/galeri-01.png" class="rounded-lg " alt="">
                 </div>
                 <div class="keen-slider__slide">
-                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                    <img src="./dist/img/galeri-02.png" class="rounded-lg" alt="">
                 </div>
                 <div class="keen-slider__slide">
-                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                    <img src="./dist/img/galeri-03.png" class="rounded-lg" alt="">
                 </div>
                 <div class="keen-slider__slide">
-                    <img src="./dist/img/makanan-catering.png" class="rounded-lg" alt="">
+                    <img src="./dist/img/galeri-04.png" class="rounded-lg" alt="">
+                </div>
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/galeri-05.png" class="rounded-lg" alt="">
+                </div>
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/galeri-06.png" class="rounded-lg" alt="">
+                </div>
+                <div class="keen-slider__slide">
+                    <img src="./dist/img/galeri-07.png" class="rounded-lg" alt="">
                 </div>
             </div>
             <div class="mt-8 flex gap-4 justify-center mx-auto">
